@@ -61,9 +61,10 @@ async def upload_video(msg: Message,file,id,tit,name,ttl):
                 ]
 
             ])
-
+            filed = os.path.basename(file)
+            filed = filed.replace("720p", "720p x265")
             caption = f"**{name}** **(Eng Sub)**"
-            caption = caption.replace("720p", "720p x264 10Bit")
+            caption = caption.replace("720p", "720p x265 10Bit")
 
             x = await app.send_document(
 
@@ -71,9 +72,9 @@ async def upload_video(msg: Message,file,id,tit,name,ttl):
 
             document=file,
 
-            caption=caption + "\n" + "(" + tit + ")",
+            caption=caption + "\n" + "(" + tit + ")" + "\n" + "#HEVC",
 
-            file_name=os.path.basename(file),
+            file_name=filed,
 
             force_document=True,
 
