@@ -11,7 +11,7 @@ loop = asyncio.get_event_loop()
 
 @app.on_message(filters.command(["start","help","ping"]))
 async def start(bot, message: Message):
-  return await message.reply_text("⚡ **Bot Is up...**")
+  return await message.reply_text("⚡ **Bot is online!!...**")
 
 async def start_bot():
   print("==================================")
