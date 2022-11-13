@@ -14,7 +14,7 @@ MONGO_DB_URI = "mongodb+srv://zoro:lost@cluster0.psqkcfz.mongodb.net/?retryWrite
 
 INDEX_ID = -1001632973141
 
-UPLOADS_ID = -1001632973141
+UPLOADS_ID = -1001679692000
 
 PROGRESS_ID = -1001632973141
 
